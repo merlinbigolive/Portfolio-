@@ -93,108 +93,88 @@ header{height:82px;position:sticky;top:0;z-index:50;border-bottom:1px solid var(
 }
 </style>
 
-<style id="reference-build-brand-animation">
-/* Reference-inspired title animation:
-   outline appears first, solid white fill wipes left-to-right,
-   then a clean mirrored reflection settles underneath.
-   No blur and no glow filter. */
-.ref-kinetic-title{
-  position:relative !important;
-  display:block !important;
+
+
+<style id="clean-build-brand-animation">
+/* Clean, premium kinetic title — crisp text only, no blur, no duplicate ghosting. */
+.clean-kinetic-title{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:baseline !important;
+  gap:.22em !important;
   width:100% !important;
-  min-height:1.35em !important;
   overflow:visible !important;
   text-align:center !important;
   color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
   filter:none !important;
-  -webkit-text-fill-color:transparent !important;
-  margin-bottom:.28em !important;
+  margin:0 auto .25em !important;
 }
-.ref-outline,
-.ref-fill,
-.ref-reflection{
-  display:block;
-  width:100%;
-  white-space:nowrap;
-  font:inherit;
-  font-weight:inherit;
-  letter-spacing:inherit;
-  text-align:center;
+.clean-word{
+  display:inline-block;
+  overflow:hidden;
+  padding:0 .025em .06em;
+  vertical-align:baseline;
 }
-.ref-outline{
-  position:relative;
-  color:transparent !important;
-  -webkit-text-fill-color:transparent !important;
-  -webkit-text-stroke:1.35px rgba(255,255,255,.9);
-  opacity:0;
-  transform:translateY(8px);
-  animation:refOutline 4.2s cubic-bezier(.2,.7,.2,1) infinite;
-}
-.ref-fill{
-  position:absolute;
-  left:0;
-  top:0;
+.clean-word > span{
+  display:inline-block;
   color:#fff !important;
   -webkit-text-fill-color:#fff !important;
-  -webkit-text-stroke:0;
-  clip-path:inset(0 100% 0 0);
-  transform:translateY(8px);
-  animation:refFill 4.2s cubic-bezier(.2,.8,.2,1) infinite;
-}
-.ref-reflection{
-  position:absolute;
-  left:0;
-  top:88%;
-  color:#fff !important;
-  -webkit-text-fill-color:#fff !important;
+  filter:none !important;
+  transform:translate3d(0,115%,0) scaleY(1.12);
   opacity:0;
-  transform:scaleY(-1) translateY(-1px);
-  transform-origin:50% 0;
-  clip-path:inset(0 100% 0 0);
-  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.42),rgba(0,0,0,0));
-  mask-image:linear-gradient(to bottom,rgba(0,0,0,.42),rgba(0,0,0,0));
-  animation:refReflection 4.2s cubic-bezier(.2,.8,.2,1) infinite;
-  pointer-events:none;
+  animation:cleanWordIn 3.6s cubic-bezier(.16,1,.3,1) infinite;
+  animation-delay:calc(var(--word-index, 0) * .13s);
 }
-@keyframes refOutline{
-  0%,7%{opacity:0;transform:translateY(8px)}
-  13%{opacity:1;transform:translateY(0)}
-  30%,100%{opacity:1;transform:translateY(0)}
+.clean-word:nth-child(1) > span{--word-index:0}
+.clean-word:nth-child(2) > span{--word-index:1}
+.clean-word:nth-child(3) > span{--word-index:2}
+
+@keyframes cleanWordIn{
+  0%,8%{
+    transform:translate3d(0,115%,0) scaleY(1.12);
+    opacity:0;
+  }
+  15%{
+    transform:translate3d(0,-9%,0) scaleY(.98);
+    opacity:1;
+  }
+  21%,67%{
+    transform:translate3d(0,0,0) scaleY(1);
+    opacity:1;
+  }
+  76%{
+    transform:translate3d(0,-2%,0) scaleY(1);
+    opacity:1;
+  }
+  84%,100%{
+    transform:translate3d(0,-115%,0) scaleY(.98);
+    opacity:0;
+  }
 }
-@keyframes refFill{
-  0%,10%{clip-path:inset(0 100% 0 0);transform:translateY(8px)}
-  18%{clip-path:inset(0 88% 0 0);transform:translateY(0)}
-  38%{clip-path:inset(0 35% 0 0)}
-  54%{clip-path:inset(0 0 0 0)}
-  72%{clip-path:inset(0 0 0 0)}
-  100%{clip-path:inset(0 100% 0 0)}
-}
-@keyframes refReflection{
-  0%,43%{opacity:0;clip-path:inset(0 100% 0 0)}
-  54%{opacity:.42;clip-path:inset(0 0 0 0)}
-  72%{opacity:.34;clip-path:inset(0 0 0 0)}
-  100%{opacity:0;clip-path:inset(0 100% 0 0)}
-}
+
 @media(max-width:560px){
-  .ref-kinetic-title{
-    font-size:clamp(36px,10.5vw,58px)!important;
-    min-height:1.4em!important;
+  .clean-kinetic-title{
+    font-size:clamp(34px,10vw,56px) !important;
+    gap:.16em !important;
   }
 }
 @media(prefers-reduced-motion:reduce){
-  .ref-outline{opacity:1!important;transform:none!important;animation:none!important}
-  .ref-fill{clip-path:inset(0)!important;transform:none!important;animation:none!important}
-  .ref-reflection{display:none!important}
+  .clean-word > span{
+    animation:none !important;
+    transform:none !important;
+    opacity:1 !important;
+  }
 }
 </style>
 </head>
 <body>
 <header><div class="wrap head"><a class="brand" href="#">Be <span>Grow</span></a><nav><a href="#portfolio">Portfolio</a></nav></div></header>
 <main>
-<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><i></i> Premium Domain Portfolio</div><h1 class="shine-title ref-kinetic-title" aria-label="Build Your Brand">
-  <span class="ref-outline">Build Your Brand</span>
-  <span class="ref-fill" aria-hidden="true">Build Your Brand</span>
-  <span class="ref-reflection" aria-hidden="true">Build Your Brand</span>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><i></i> Premium Domain Portfolio</div><h1 class="shine-title clean-kinetic-title" aria-label="Build Your Brand">
+  <span class="clean-word"><span>Build</span></span>
+  <span class="clean-word"><span>Your</span></span>
+  <span class="clean-word"><span>Brand</span></span>
 </h1><p class="hero-copy" style="color:#fff;text-align:center;">A focused collection of premium .com domains selected for strong positioning, memorable naming and flexible commercial use.</p><div class="hero-actions"><a class="btn btn-primary" href="#portfolio">View domains ↓</a></div></div></div></div></section>
 <section class="section" id="portfolio"><div class="wrap"><div class="section-head"><div><div class="kicker selected-domains-center-fix">Selected domains</div><h2 style="text-align:center!important;"><span class="selected-title-center">ACQUIRE NAME</span></h2></div><p class="section-note">Explore the names, positioning and visual previews. Choose a marketplace below. Buy Now and negotiation are handled on the marketplace listing where supported.</p></div>
 
