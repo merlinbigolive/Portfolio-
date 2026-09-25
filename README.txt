@@ -1,2 +1,8 @@
 Be Grow — Premium Domain Portfolio
-Final purple luxury build. Videos and poster frames are embedded in index.html so the page does not depend on separate media paths. Muted autoplay, loop and playsinline are enabled. Marketplace buttons open the relevant domain route; Afternic Buy Now landers may use GoDaddy URLs because Afternic has migrated Buy Now landers to GoDaddy.
+
+Updated purple luxury build.
+- Hero keeps only the centered “View domains” button.
+- “Acquisition process” hero button removed.
+- Marketplace dropdowns now contain only Sedo, Atom and Afternic.
+- View domains button has a subtle animated shine sweep.
+- Domain videos/posters remain embedded in index.html.
