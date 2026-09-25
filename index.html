@@ -185,6 +185,124 @@ header{height:82px;position:sticky;top:0;z-index:50;border-bottom:1px solid var(
   .build-brand-single{margin-top:22px !important;}
 }
 </style>
+
+<style id="bohemian-red-premium-theme">
+:root{
+ --bg:#18070a;--bg2:#250b10;--card:#351016;--card2:#41141b;
+ --ink:#fff7ef;--muted:#d2b8b0;--line:#5a252b;
+ --purple:#d9a45a;--purple2:#f1c985;--deep:#8e2635;--white:#fffaf4;
+ --shadow:0 30px 90px rgba(0,0,0,.48);
+}
+html{scroll-behavior:smooth}
+body{
+ background:
+ radial-gradient(circle at 12% 5%,rgba(184,72,65,.20),transparent 28%),
+ radial-gradient(circle at 88% 20%,rgba(218,164,90,.14),transparent 25%),
+ radial-gradient(circle at 50% 100%,rgba(128,25,43,.22),transparent 34%),
+ linear-gradient(135deg,#18070a 0%,#260a10 48%,#120407 100%);
+ color:var(--ink);
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.16;
+ background-image:radial-gradient(rgba(255,220,180,.7) .45px,transparent .55px);
+ background-size:7px 7px;
+ mask-image:linear-gradient(to bottom,transparent,black 12%,black 88%,transparent);
+}
+header{
+ border-bottom:1px solid rgba(217,164,90,.25);
+ background:rgba(24,7,10,.90);
+ -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+}
+.brand{font-family:Georgia,"Times New Roman",serif;letter-spacing:-1px}
+.brand span{color:#e3b56e}
+nav a{font-family:Georgia,"Times New Roman",serif}
+.hero{padding-top:72px}
+.hero:after{
+ background:radial-gradient(circle,rgba(221,166,91,.24),rgba(145,35,50,.10) 35%,transparent 68%);
+ filter:blur(4px);
+}
+.eyebrow,.kicker{color:#e7b66d}
+.eyebrow i{background:#d7a05b;box-shadow:0 0 20px rgba(215,160,91,.85)}
+.shine-title{
+ font-family:Georgia,"Times New Roman",serif;
+ font-weight:700;
+ background:linear-gradient(110deg,#fff8ec 0%,#fff8ec 30%,#d9a45a 43%,#fff8ec 52%,#f0c77e 62%,#fff8ec 75%,#fff8ec 100%);
+ background-size:260% 100%;
+ animation:bohoTitleShine 4.8s ease-in-out infinite;
+ text-shadow:0 0 34px rgba(218,164,90,.12);
+}
+@keyframes bohoTitleShine{
+ 0%,18%{background-position:210% 0}
+ 55%{background-position:15% 0}
+ 100%{background-position:-120% 0}
+}
+.hero-copy{color:#f4dfd4!important}
+.btn{border-color:#713039;background:#2a0c12}
+.btn-primary{
+ background:linear-gradient(135deg,#d9a45a,#f0c77e 48%,#b87937);
+ color:#2a0a0f;border-color:#edc47d;
+ box-shadow:0 10px 35px rgba(218,164,90,.18);
+}
+.btn-primary:after{
+ background:linear-gradient(90deg,transparent,rgba(255,255,255,.95),transparent);
+ animation:buttonShine 2.5s ease-in-out infinite;
+}
+.btn-ghost{background:#321016;color:#fff3e8}
+.hero-art{
+ border-color:#653039;
+ background:
+ radial-gradient(circle at 50% 42%,rgba(205,117,74,.18),transparent 24%),
+ linear-gradient(145deg,#4a151d,#18070b 75%);
+}
+.hero-art:before{border-color:rgba(220,168,100,.36)}
+.hero-orb{
+ background:radial-gradient(circle at 30% 25%,#fff1d0,#d59a55 40%,#7d2330 100%);
+ box-shadow:0 0 90px rgba(211,153,79,.35);
+}
+.ring{border-color:rgba(239,194,119,.78)}
+.ring2{border-color:rgba(239,194,119,.24)}
+.art-top{color:#cdb1a8}.art-bottom{color:#e5b66c}
+.domain{
+ background:linear-gradient(145deg,#42141c,#24090e);
+ border-color:#622a32;
+ box-shadow:0 30px 90px rgba(0,0,0,.48),inset 0 1px 0 rgba(255,220,170,.05);
+}
+.name{font-family:Georgia,"Times New Roman",serif}
+.name span{color:#e2b36c}
+.category{color:#f0ddd4}
+.desc,.section-note,.process-note,.detail p,.detail li{color:#d3b9b0}
+.tag{border-color:#673039;background:#2b0d13;color:#e4c9bc}
+.market{background:#fff7eb;color:#2b0b10}
+.market.gold{
+ background:linear-gradient(135deg,#d6a05b,#f0ca83,#b87939);
+ color:#280a0f;
+}
+.menu{background:#2b0d13;border-color:#70404a}
+.menu a:hover{background:#48151e}
+.menu .verified{color:#edc47d}
+.media{background:#16060a}
+.media:after{background:linear-gradient(180deg,rgba(25,5,8,.08),rgba(25,5,8,.45))}
+.media-label{background:rgba(28,7,12,.75);border-color:rgba(238,192,115,.25)}
+.play{background:rgba(31,8,13,.7);border-color:rgba(238,192,115,.75)}
+.details{border-top-color:#602831}
+.detail{border-right-color:#602831}
+.process{
+ background:linear-gradient(180deg,#260a10,#18070a);
+ border-color:#602831;
+}
+.process .kicker{color:#e0ac65}
+.process-card{background:#321016;border-color:#5e2830}
+.process-num{color:#e6b66c}
+footer{border-color:#602831;color:#a88c84}
+.footer-row{color:#f3e1d5}
+.section-head h2,.process h2{font-family:Georgia,"Times New Roman",serif}
+.premium-portfolio-label{color:#efc47e!important}
+@media(max-width:560px){
+ .hero{padding-top:54px}
+ .shine-title{font-size:clamp(36px,9.5vw,54px)!important}
+ .domain{box-shadow:0 22px 60px rgba(0,0,0,.5)}
+}
+</style>
 </head>
 <body>
 <header><div class="wrap head"><a class="brand" href="#">Be <span>Grow</span></a><nav><a href="#portfolio">Portfolio</a></nav></div></header>
