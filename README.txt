@@ -1,16 +1,19 @@
-Be Grow — Premium Domain Portfolio
-Fresh rebuild.
+Be Grow — Purple Premium Domain Portfolio
+
+Fresh rebuild in a dark-purple luxury/editorial direction.
 
 Included:
 - OdinShip.com
 - ClassyHeels.com
 - MughlaiFood.com
 - Original supplied MP4 videos
-- Real video-frame poster fallbacks
-- Muted autoplay / loop / playsinline
-- Manual Play Preview fallback when browser blocks autoplay
-- Fast interactions; no slow scroll-reveal
+- Poster-frame fallback images for all three videos
+- Muted autoplay / loop / playsinline video behavior
+- Manual Play Preview fallback when autoplay is blocked
+- Fast native scrolling; no slow scroll-reveal animations
+- Large, high-contrast typography designed for mobile
 - Responsive mobile layout
 - Buy It Now / Make an Offer marketplace menus
+- Verified ClassyHeels Atom and GoDaddy listing links
 
-Only verified marketplace URLs are active. Unknown listing URLs are intentionally not replaced with marketplace homepages.
+Upload the complete ZIP contents so the assets/ folder remains beside index.html.

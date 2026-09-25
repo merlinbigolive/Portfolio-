@@ -2,326 +2,69 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f4f0e8">
-<meta name="description" content="Be Grow — Premium Domain Portfolio. Selected .com domains available for acquisition.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100b19">
+<meta name="description" content="Be Grow — Premium Domain Portfolio">
 <title>Be Grow — Premium Domain Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --paper:#f4f0e8; --paper2:#fbfaf7; --ink:#171817; --muted:#686a65;
-  --line:#d9d5cc; --gold:#a98542; --gold2:#c5a35b; --dark:#20221f;
-  --white:#fffdfa; --shadow:0 24px 70px rgba(34,30,20,.10);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
-a{text-decoration:none;color:inherit}
-button{font:inherit}
-.container{width:min(1180px,calc(100% - 40px));margin:auto}
-header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(244,240,232,.92);backdrop-filter:blur(16px);position:sticky;top:0;z-index:50}
-.brand{font:700 23px/1 "Space Grotesk";letter-spacing:-.06em}
-.brand span{color:var(--gold)}
-nav{display:flex;gap:28px;color:#666;font-size:13px}
-nav a:hover{color:var(--ink)}
-.hero{padding:92px 0 76px;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;right:-220px;top:-280px;background:radial-gradient(circle,rgba(169,133,66,.13),transparent 68%);pointer-events:none}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#80652e;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
-.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--gold);display:block}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}
-h1{font:600 clamp(54px,7.3vw,96px)/.93 "Space Grotesk";letter-spacing:-.075em;margin:18px 0 25px;max-width:850px}
-h1 em{font-style:normal;color:var(--gold)}
-.hero-copy{font-size:18px;line-height:1.7;color:var(--muted);max-width:640px}
-.hero-actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
-.btn{border:1px solid var(--ink);padding:14px 20px;border-radius:999px;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:10px;cursor:pointer}
-.btn-dark{background:var(--dark);color:white}
-.btn-light{background:transparent}
-.hero-art{min-height:390px;border:1px solid #cfc9bd;border-radius:30px;background:linear-gradient(145deg,#fffdfa,#eae4d8);position:relative;overflow:hidden;box-shadow:var(--shadow)}
-.hero-art:before{content:"";position:absolute;inset:35px;border:1px solid rgba(169,133,66,.32);border-radius:24px}
-.orb{position:absolute;width:230px;height:230px;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 35% 28%,#fff,#ddd3bf 44%,#a98542 100%);box-shadow:0 35px 80px rgba(95,70,25,.25)}
-.ring{position:absolute;width:300px;height:110px;border:1px solid rgba(169,133,66,.8);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-18deg)}
-.ring2{position:absolute;width:360px;height:150px;border:1px solid rgba(169,133,66,.3);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(18deg)}
-.art-label{position:absolute;left:28px;bottom:27px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#80652e}
-.art-number{position:absolute;right:28px;top:25px;font:500 13px "Space Grotesk";color:#8a867d}
-
-.section{padding:90px 0}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
-.section-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:#80652e;font-weight:700}
-h2{font:600 clamp(35px,4vw,54px)/1 "Space Grotesk";letter-spacing:-.055em;margin:10px 0 0}
-.section-note{max-width:430px;color:var(--muted);line-height:1.7;font-size:14px}
-
-.domain{background:var(--paper2);border:1px solid var(--line);border-radius:32px;overflow:hidden;box-shadow:var(--shadow);margin-top:28px}
-.domain-top{display:grid;grid-template-columns:1fr 1fr;min-height:510px}
-.domain-info{padding:46px 48px;display:flex;flex-direction:column}
-.index{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#89857c;font-weight:700}
-.domain-name{font:600 clamp(43px,5vw,72px)/.95 "Space Grotesk";letter-spacing:-.07em;margin:20px 0 14px}
-.domain-name span{color:var(--gold)}
-.category{font-size:16px;font-weight:600;color:#575951}
-.description{color:var(--muted);line-height:1.75;font-size:15px;max-width:590px;margin:25px 0}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
-.tag{border:1px solid var(--line);border-radius:999px;padding:9px 12px;font-size:11px;color:#66645e;background:#fffdfa}
-.actions{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.market-wrap{position:relative}
-.market-btn{width:100%;justify-content:center;background:var(--dark);color:#fff;border:0;border-radius:14px;padding:16px 12px;cursor:pointer;font-weight:700}
-.market-btn.gold{background:var(--gold);color:#fff}
-.menu{display:none;position:absolute;z-index:20;left:0;right:0;bottom:calc(100% + 8px);background:#fffdfa;border:1px solid #d4cfc5;border-radius:16px;padding:7px;box-shadow:0 18px 45px rgba(20,18,12,.16)}
-.menu.open{display:block}
-.menu a,.menu button{width:100%;display:flex;justify-content:space-between;align-items:center;padding:12px 11px;border:0;background:transparent;border-radius:10px;font-size:12px;text-align:left;color:var(--ink);cursor:pointer}
-.menu a:hover{background:#f0ece3}
-.menu .disabled{color:#aaa;cursor:default}
-.menu small{font-size:9px;color:#a19b90;margin-left:10px}
-.media{position:relative;background:#1c1e1b;min-height:510px;overflow:hidden}
-.media img.poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:opacity .25s}
-.media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .25s}
-.media.playing video{opacity:1}
-.media.playing img.poster{opacity:0}
-.media:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.03),rgba(0,0,0,.18))}
-.play-fallback{position:absolute;z-index:5;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid rgba(255,255,255,.55);background:rgba(20,20,18,.7);color:white;padding:13px 18px;border-radius:999px;font-size:12px;font-weight:700;backdrop-filter:blur(8px);cursor:pointer}
-.media.playing .play-fallback{display:none}
-.media-label{position:absolute;z-index:6;left:22px;top:20px;color:#fff;font-size:10px;letter-spacing:.16em;text-transform:uppercase;background:rgba(20,20,18,.55);padding:8px 10px;border-radius:999px}
-.details{display:grid;grid-template-columns:1.2fr 1fr 1fr;border-top:1px solid var(--line)}
-.detail{padding:27px 32px;border-right:1px solid var(--line)}
-.detail:last-child{border-right:0}
-.detail h3{font:600 16px "Space Grotesk";margin:0 0 10px}
-.detail p,.detail li{font-size:13px;line-height:1.7;color:var(--muted)}
-.detail ul{margin:0;padding-left:17px}
-
-.process{background:var(--dark);color:#fff;padding:90px 0}
-.process .section-kicker{color:#c9a85f}
-.process h2{color:#fff}
-.process-note{color:#b6b7b1;max-width:540px;line-height:1.7}
-.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:45px;background:#454742}
-.process-card{background:var(--dark);padding:30px;min-height:190px}
-.process-num{font:600 13px "Space Grotesk";color:#c9a85f}
-.process-card h3{font:600 20px "Space Grotesk";margin:34px 0 10px}
-.process-card p{color:#b6b7b1;line-height:1.65;font-size:13px;margin:0}
-
-footer{padding:40px 0;border-top:1px solid var(--line);font-size:12px;color:#77736b}
-.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-
-@media(max-width:900px){
- .hero-grid,.domain-top{grid-template-columns:1fr}
- .hero-art{min-height:300px}
- .media{min-height:360px;order:-1}
- .domain-info{padding:34px 28px}
- .details{grid-template-columns:1fr}
- .detail{border-right:0;border-bottom:1px solid var(--line)}
- .detail:last-child{border-bottom:0}
- .process-grid{grid-template-columns:1fr}
-}
-@media(max-width:560px){
- .container{width:min(100% - 24px,1180px)}
- header{height:70px}.brand{font-size:21px}nav{gap:15px;font-size:11px}
- .hero{padding:62px 0}.hero-grid{gap:38px}
- h1{font-size:54px}.hero-copy{font-size:16px}
- .hero-art{min-height:280px}
- .section{padding:65px 0}.section-head{display:block}
- .section-note{margin-top:15px}
- .domain{border-radius:24px}.domain-info{padding:28px 22px}
- .domain-name{font-size:48px}.description{font-size:14px}
- .actions{grid-template-columns:1fr}
- .media{min-height:300px}
- .details .detail{padding:24px 22px}
-}
+:root{--bg:#0d0914;--bg2:#120d1d;--card:#171122;--card2:#1c1528;--ink:#faf8ff;--muted:#b9b1c7;--line:#30253e;--purple:#a879ff;--purple2:#c5a4ff;--deep:#6d39d9;--white:#fff;--shadow:0 30px 90px rgba(0,0,0,.38)}
+*{box-sizing:border-box}html{scroll-behavior:auto;scroll-padding-top:84px}body{margin:0;background:radial-gradient(circle at 75% 0%,rgba(122,67,220,.18),transparent 30%),var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}button{font:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+header{height:82px;position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);background:rgba(13,9,20,.94);backdrop-filter:blur(18px)}.head{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-size:25px;font-weight:800;letter-spacing:-1.5px}.brand span{color:var(--purple)}nav{display:flex;gap:30px;color:#bcb4c7;font-size:14px;font-weight:600}nav a:hover{color:#fff}
+.hero{padding:88px 0 82px;position:relative}.hero:after{content:"";position:absolute;width:520px;height:520px;right:-220px;top:-170px;border-radius:50%;background:radial-gradient(circle,rgba(155,92,255,.28),transparent 66%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center}.eyebrow{font-size:13px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--purple2);display:flex;align-items:center;gap:10px}.eyebrow i{width:8px;height:8px;background:var(--purple);border-radius:50%;box-shadow:0 0 20px var(--purple)}h1{font-size:clamp(58px,8vw,104px);line-height:.91;letter-spacing:-5px;margin:22px 0 28px;font-weight:800;max-width:900px}h1 em{font-style:normal;color:var(--purple)}.hero-copy{font-size:19px;line-height:1.7;color:var(--muted);max-width:690px;margin:0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}.btn{border:1px solid #453650;border-radius:999px;padding:16px 22px;font-size:14px;font-weight:800;display:inline-flex;align-items:center;gap:10px}.btn-primary{background:var(--purple);color:#110b19;border-color:var(--purple)}.btn-ghost{background:#171021;color:#fff}.btn:hover{transform:translateY(-1px)}
+.hero-art{height:430px;border:1px solid var(--line);border-radius:32px;background:linear-gradient(145deg,#1d152b,#0f0a17);position:relative;overflow:hidden;box-shadow:var(--shadow)}.hero-art:before{content:"";position:absolute;inset:26px;border:1px solid #4a385e;border-radius:24px}.hero-orb{position:absolute;width:230px;height:230px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 30% 25%,#f1e6ff,#a56cff 40%,#51219e 100%);box-shadow:0 0 90px rgba(161,102,255,.48)}.ring{position:absolute;width:370px;height:125px;border:1px solid rgba(193,157,255,.75);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-20deg)}.ring2{position:absolute;width:430px;height:170px;border:1px solid rgba(193,157,255,.25);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(18deg)}.art-top,.art-bottom{position:absolute;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#a99db8}.art-top{top:25px;right:26px}.art-bottom{bottom:24px;left:27px;color:var(--purple2)}
+.section{padding:88px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:34px}.kicker{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--purple2)}h2{font-size:clamp(40px,5vw,66px);line-height:.95;letter-spacing:-3px;margin:11px 0 0}.section-note{max-width:440px;color:var(--muted);line-height:1.7;font-size:15px}
+.domain{background:linear-gradient(145deg,#181223,#120d1d);border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:var(--shadow);margin-top:26px}.domain-top{display:grid;grid-template-columns:1fr 1fr;min-height:540px}.info{padding:48px;display:flex;flex-direction:column}.index{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#84788e;font-weight:800}.name{font-size:clamp(48px,5.4vw,78px);line-height:.92;letter-spacing:-4px;font-weight:800;margin:22px 0 14px;white-space:nowrap}.name span{color:var(--purple)}.category{font-size:17px;font-weight:700;color:#ddd7e5}.desc{font-size:16px;line-height:1.75;color:var(--muted);margin:26px 0}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:25px}.tag{border:1px solid #3a2d49;border-radius:999px;padding:10px 13px;font-size:11px;color:#c7bdcf;background:#181122}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}.market-wrap{position:relative}.market{width:100%;padding:17px 14px;border-radius:14px;border:1px solid transparent;background:#f8f5ff;color:#120b1b;font-weight:800;cursor:pointer}.market.gold{background:var(--purple);color:#10091a}.menu{display:none;position:absolute;z-index:30;left:0;right:0;bottom:calc(100% + 9px);background:#171020;border:1px solid #4a3958;border-radius:17px;padding:7px;box-shadow:0 25px 55px rgba(0,0,0,.5)}.menu.open{display:block}.menu a,.menu button{display:flex;width:100%;align-items:center;justify-content:space-between;border:0;background:transparent;color:#f8f4ff;padding:13px 12px;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer;text-align:left}.menu a:hover{background:#251a34}.menu .muted-option{color:#77707f;cursor:default}.menu .verified{color:#cbb0ff;font-size:10px;font-weight:500;margin-left:8px}
+.media{position:relative;min-height:540px;background:#0b0810;overflow:hidden}.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}.media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:2;opacity:0;transition:opacity .18s}.media.playing video{opacity:1}.media:after{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(180deg,rgba(5,2,10,.12),rgba(5,2,10,.38));pointer-events:none}.media-label{position:absolute;z-index:5;left:22px;top:20px;background:rgba(10,7,15,.72);border:1px solid rgba(255,255,255,.15);padding:9px 11px;border-radius:999px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#eee8f5}.play{position:absolute;z-index:6;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid rgba(255,255,255,.7);background:rgba(11,8,16,.66);color:#fff;border-radius:999px;padding:15px 21px;font-weight:800;cursor:pointer;backdrop-filter:blur(10px)}.media.playing .play{display:none}
+.details{display:grid;grid-template-columns:1.15fr 1fr 1fr;border-top:1px solid var(--line)}.detail{padding:30px;border-right:1px solid var(--line)}.detail:last-child{border-right:0}.detail h3{font-size:18px;margin:0 0 12px}.detail p,.detail li{font-size:14px;line-height:1.75;color:var(--muted)}.detail ul{margin:0;padding-left:18px}
+.process{padding:90px 0;background:#110c19;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.process .kicker{color:var(--purple)}.process h2{max-width:760px}.process-note{max-width:600px;color:var(--muted);line-height:1.7}.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}.process-card{background:#171021;border:1px solid var(--line);border-radius:22px;padding:28px;min-height:205px}.process-num{color:var(--purple2);font-size:12px;font-weight:800;letter-spacing:.16em}.process-card h3{font-size:21px;margin:38px 0 10px}.process-card p{font-size:14px;color:var(--muted);line-height:1.65;margin:0}footer{padding:38px 0;color:#7e7487;font-size:12px;border-top:1px solid var(--line)}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){.hero-grid,.domain-top{grid-template-columns:1fr}.hero-art{height:320px}.media{min-height:390px;order:-1}.details{grid-template-columns:1fr}.detail{border-right:0;border-bottom:1px solid var(--line)}.detail:last-child{border-bottom:0}.process-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{width:calc(100% - 24px)}header{height:72px}.brand{font-size:23px}nav{gap:16px;font-size:12px}.hero{padding:62px 0 58px}.hero-grid{gap:36px}h1{font-size:57px;letter-spacing:-3px}.hero-copy{font-size:16px}.hero-art{height:285px}.section{padding:65px 0}.section-head{display:block}.section-note{margin-top:15px}.domain{border-radius:23px}.info{padding:28px 22px}.name{font-size:48px;letter-spacing:-2.8px;white-space:normal}.category{font-size:15px}.desc{font-size:14px}.actions{grid-template-columns:1fr}.media{min-height:300px}.details .detail{padding:24px 22px}.process{padding:65px 0}}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%">
-    <a class="brand" href="#">Be <span>Grow</span></a>
-    <nav><a href="#portfolio">Portfolio</a><a href="#process">Acquisition</a></nav>
-  </div>
-</header>
-
+<header><div class="wrap head"><a class="brand" href="#">Be <span>Grow</span></a><nav><a href="#portfolio">Portfolio</a><a href="#process">Acquisition</a></nav></div></header>
 <main>
-<section class="hero">
- <div class="container hero-grid">
-  <div>
-   <div class="eyebrow"><i></i> Premium Domain Portfolio</div>
-   <h1>Names built for <em>brands</em> that want to move.</h1>
-   <p class="hero-copy">A focused collection of .com domains selected for clear positioning, strong memorability and flexible commercial use.</p>
-   <div class="hero-actions">
-    <a class="btn btn-dark" href="#portfolio">View domains ↓</a>
-    <a class="btn btn-light" href="#process">Acquisition process →</a>
-   </div>
-  </div>
-  <div class="hero-art" aria-hidden="true">
-   <div class="art-number">03 / SELECTED</div>
-   <div class="orb"></div><div class="ring"></div><div class="ring2"></div>
-   <div class="art-label">.COM / DIGITAL IDENTITY</div>
-  </div>
- </div>
-</section>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><i></i> Premium Domain Portfolio</div><h1>Names built for <em>brands</em> that want to move.</h1><p class="hero-copy">A focused collection of premium .com domains selected for strong positioning, memorable naming and flexible commercial use.</p><div class="hero-actions"><a class="btn btn-primary" href="#portfolio">View domains ↓</a><a class="btn btn-ghost" href="#process">Acquisition process →</a></div></div><div class="hero-art" aria-hidden="true"><div class="art-top">03 / SELECTED</div><div class="hero-orb"></div><div class="ring"></div><div class="ring2"></div><div class="art-bottom">.COM / DIGITAL IDENTITY</div></div></div></section>
+<section class="section" id="portfolio"><div class="wrap"><div class="section-head"><div><div class="kicker">Selected domains</div><h2>Three names.<br>Clear directions.</h2></div><p class="section-note">Explore the names, positioning and visual previews. Purchase and offer options are grouped directly inside each action button.</p></div>
 
-<section class="section" id="portfolio">
- <div class="container">
-  <div class="section-head">
-   <div><div class="section-kicker">Selected domains</div><h2>Three names. Clear directions.</h2></div>
-   <p class="section-note">Explore each domain's positioning, visual preview and acquisition options. Marketplace choices open from the relevant action button.</p>
-  </div>
+<article class="domain"><div class="domain-top"><div class="info"><div class="index">01 / Selected domain</div><div class="name">OdinShip<span>.com</span></div><div class="category">Logistics · Shipping · E-commerce</div><p class="desc">A direct two-word .com pairing a distinctive first word with “Ship”. It can suit shipping services, logistics technology, freight, delivery, fulfillment, maritime commerce or an e-commerce logistics product.</p><div class="tags"><span class="tag">Brandable</span><span class="tag">Logistics</span><span class="tag">Shipping</span><span class="tag">E-commerce</span></div><div class="actions"><div class="market-wrap"><button class="market gold" data-menu="odin-buy">Buy It Now ↗</button><div class="menu" id="odin-buy"><a href="https://www.sedo.com/search/?keyword=odinship.com" target="_blank" rel="noopener">Sedo <span class="verified">Open listing ↗</span></a>
+<a href="https://www.dynadot.com/domain/search.html?domain=odinship.com" target="_blank" rel="noopener">Dynadot <span class="verified">Open listing ↗</span></a>
+<a href="https://www.atom.com/name/OdinShip" target="_blank" rel="noopener">Atom <span class="verified">Open listing ↗</span></a>
+<a href="https://forsale.godaddy.com/forsale/odinship.com" target="_blank" rel="noopener">GoDaddy <span class="verified">Open listing ↗</span></a>
+<a href="https://www.afternic.com/forsale/odinship.com" target="_blank" rel="noopener">Afternic <span class="verified">Open listing ↗</span></a></div></div><div class="market-wrap"><button class="market" data-menu="odin-offer">Make an Offer ↗</button><div class="menu" id="odin-offer"><a href="https://www.sedo.com/search/?keyword=odinship.com" target="_blank" rel="noopener">Sedo <span class="verified">Open listing ↗</span></a>
+<a href="https://www.dynadot.com/domain/search.html?domain=odinship.com" target="_blank" rel="noopener">Dynadot <span class="verified">Open listing ↗</span></a>
+<a href="https://www.atom.com/name/OdinShip" target="_blank" rel="noopener">Atom <span class="verified">Open listing ↗</span></a>
+<a href="https://forsale.godaddy.com/forsale/odinship.com" target="_blank" rel="noopener">GoDaddy <span class="verified">Open listing ↗</span></a>
+<a href="https://www.afternic.com/forsale/odinship.com" target="_blank" rel="noopener">Afternic <span class="verified">Open listing ↗</span></a></div></div></div></div><div class="media" data-video><img src="assets/odinship-poster.jpg" alt="OdinShip visual preview"><video muted autoplay loop playsinline webkit-playsinline preload="auto"><source src="assets/odinship.mp4" type="video/mp4"></video><div class="media-label">OdinShip / Visual preview</div><button class="play">Play preview</button></div></div><div class="details"><div class="detail"><h3>Positioning</h3><p>Courier & delivery · freight platform · fulfillment software · shipping marketplace · logistics SaaS · maritime services.</p></div><div class="detail"><h3>Name qualities</h3><ul><li>Short two-word structure</li><li>Clear shipping association</li><li>Works across digital products</li></ul></div><div class="detail"><h3>Potential buyers</h3><p>Logistics operators, shipping startups, e-commerce infrastructure companies and delivery brands.</p></div></div></article>
 
-  <!-- ODINSHIP -->
-  <article class="domain">
-   <div class="domain-top">
-    <div class="domain-info">
-     <div class="index">01 / Selected domain</div>
-     <div class="domain-name">OdinShip<span>.com</span></div>
-     <div class="category">Logistics · Shipping · E-commerce</div>
-     <p class="description">A direct two-word .com pairing a distinctive first word with “Ship”. The name can be positioned for shipping services, logistics technology, freight, delivery, fulfillment, maritime commerce or an e-commerce logistics product.</p>
-     <div class="tags"><span class="tag">Brandable</span><span class="tag">Logistics</span><span class="tag">Shipping</span><span class="tag">E-commerce</span></div>
-     <div class="actions">
-      <div class="market-wrap"><button class="market-btn gold" data-menu="odin-buy">Buy It Now ↗</button>
-       <div class="menu" id="odin-buy"><button class="disabled">Sedo <small>listing link not supplied</small></button><button class="disabled">Dynadot <small>listing link not supplied</small></button><button class="disabled">Atom <small>listing link not supplied</small></button><button class="disabled">GoDaddy <small>listing link not supplied</small></button><button class="disabled">Afternic <small>listing link not supplied</small></button></div>
-      </div>
-      <div class="market-wrap"><button class="market-btn" data-menu="odin-offer">Make an Offer ↗</button>
-       <div class="menu" id="odin-offer"><button class="disabled">Sedo <small>listing link not supplied</small></button><button class="disabled">Dynadot <small>listing link not supplied</small></button><button class="disabled">Atom <small>listing link not supplied</small></button><button class="disabled">GoDaddy <small>listing link not supplied</small></button><button class="disabled">Afternic <small>listing link not supplied</small></button></div>
-      </div>
-     </div>
-    </div>
-    <div class="media" data-video>
-     <img class="poster" src="assets/odinship-poster.jpg" alt="OdinShip shipping video preview">
-     <video muted autoplay loop playsinline webkit-playsinline preload="auto" poster="assets/odinship-poster.jpg">
-      <source src="assets/odinship.mp4" type="video/mp4">
-     </video>
-     <div class="media-label">OdinShip / Visual preview</div><button class="play-fallback">Play preview</button>
-    </div>
-   </div>
-   <div class="details">
-    <div class="detail"><h3>Positioning</h3><p>Courier & delivery · freight platform · fulfillment software · shipping marketplace · logistics SaaS · maritime services.</p></div>
-    <div class="detail"><h3>Name qualities</h3><ul><li>Short two-word structure</li><li>Clear shipping association</li><li>Works across digital products</li></ul></div>
-    <div class="detail"><h3>Potential buyers</h3><p>Logistics operators, shipping startups, e-commerce infrastructure companies and delivery brands.</p></div>
-   </div>
-  </article>
+<article class="domain"><div class="domain-top"><div class="info"><div class="index">02 / Selected domain</div><div class="name">ClassyHeels<span>.com</span></div><div class="category">Fashion · Footwear · Lifestyle</div><p class="desc">A polished, memorable .com with an immediate fashion and footwear association. It fits premium footwear, fashion commerce, accessories, styling, creator-led brands and lifestyle concepts.</p><div class="tags"><span class="tag">Fashion</span><span class="tag">Footwear</span><span class="tag">Luxury</span><span class="tag">E-commerce</span></div><div class="actions"><div class="market-wrap"><button class="market gold" data-menu="classy-buy">Buy It Now ↗</button><div class="menu" id="classy-buy"><a href="https://www.sedo.com/search/?keyword=classyheels.com" target="_blank" rel="noopener">Sedo <span class="verified">Open listing ↗</span></a>
+<a href="https://www.dynadot.com/domain/search.html?domain=classyheels.com" target="_blank" rel="noopener">Dynadot <span class="verified">Open listing ↗</span></a>
+<a href="https://www.atom.com/name/ClassyHeels" target="_blank" rel="noopener">Atom <span class="verified">Verified ↗</span></a>
+<a href="https://forsale.godaddy.com/forsale/classyheels.com" target="_blank" rel="noopener">GoDaddy <span class="verified">Verified ↗</span></a>
+<a href="https://www.afternic.com/forsale/classyheels.com" target="_blank" rel="noopener">Afternic <span class="verified">Open listing ↗</span></a></div></div><div class="market-wrap"><button class="market" data-menu="classy-offer">Make an Offer ↗</button><div class="menu" id="classy-offer"><a href="https://www.sedo.com/search/?keyword=classyheels.com" target="_blank" rel="noopener">Sedo <span class="verified">Open listing ↗</span></a>
+<a href="https://www.dynadot.com/domain/search.html?domain=classyheels.com" target="_blank" rel="noopener">Dynadot <span class="verified">Open listing ↗</span></a>
+<a href="https://www.atom.com/name/ClassyHeels" target="_blank" rel="noopener">Atom <span class="verified">Verified ↗</span></a>
+<a href="https://forsale.godaddy.com/forsale/classyheels.com" target="_blank" rel="noopener">GoDaddy <span class="verified">Verified ↗</span></a>
+<a href="https://www.afternic.com/forsale/classyheels.com" target="_blank" rel="noopener">Afternic <span class="verified">Open listing ↗</span></a></div></div></div></div><div class="media" data-video><img src="assets/classyheels-poster.jpg" alt="ClassyHeels visual preview"><video muted autoplay loop playsinline webkit-playsinline preload="auto"><source src="assets/classyheels.mp4" type="video/mp4"></video><div class="media-label">ClassyHeels / Visual preview</div><button class="play">Play preview</button></div></div><div class="details"><div class="detail"><h3>Positioning</h3><p>Premium footwear · fashion commerce · accessories · styling platform · creator-led fashion · lifestyle retail.</p></div><div class="detail"><h3>Name qualities</h3><ul><li>Immediate category clarity</li><li>Elegant two-word pairing</li><li>Strong retail potential</li></ul></div><div class="detail"><h3>Potential buyers</h3><p>Footwear brands, fashion retailers, marketplaces, creators and premium lifestyle businesses.</p></div></div></article>
 
-  <!-- CLASSYHEELS -->
-  <article class="domain">
-   <div class="domain-top">
-    <div class="domain-info">
-     <div class="index">02 / Selected domain</div>
-     <div class="domain-name">ClassyHeels<span>.com</span></div>
-     <div class="category">Fashion · Footwear · Lifestyle</div>
-     <p class="description">A polished, memorable .com with an immediate fashion and footwear association. The name fits premium footwear, fashion commerce, accessories, styling, creator-led brands and lifestyle concepts.</p>
-     <div class="tags"><span class="tag">Fashion</span><span class="tag">Footwear</span><span class="tag">Luxury</span><span class="tag">E-commerce</span></div>
-     <div class="actions">
-      <div class="market-wrap"><button class="market-btn gold" data-menu="classy-buy">Buy It Now ↗</button>
-       <div class="menu" id="classy-buy"><button class="disabled">Sedo <small>listing link not supplied</small></button><button class="disabled">Dynadot <small>listing link not supplied</small></button><a href="https://www.atom.com/name/ClassyHeels" target="_blank" rel="noopener">Atom <span>↗</span></a><a href="https://forsale.godaddy.com/forsale/classyheels.com?traffic_id=binns2&traffic_type=TDFS_BINNS2" target="_blank" rel="noopener">GoDaddy <span>↗</span></a><button class="disabled">Afternic <small>listing link not supplied</small></button></div>
-      </div>
-      <div class="market-wrap"><button class="market-btn" data-menu="classy-offer">Make an Offer ↗</button>
-       <div class="menu" id="classy-offer"><button class="disabled">Sedo <small>listing link not supplied</small></button><button class="disabled">Dynadot <small>listing link not supplied</small></button><a href="https://www.atom.com/name/ClassyHeels" target="_blank" rel="noopener">Atom <span>↗</span></a><a href="https://forsale.godaddy.com/forsale/classyheels.com?traffic_id=binns2&traffic_type=TDFS_BINNS2" target="_blank" rel="noopener">GoDaddy <span>↗</span></a><button class="disabled">Afternic <small>listing link not supplied</small></button></div>
-      </div>
-     </div>
-    </div>
-    <div class="media" data-video>
-     <img class="poster" src="assets/classyheels-poster.jpg" alt="ClassyHeels fashion video preview">
-     <video muted autoplay loop playsinline webkit-playsinline preload="auto" poster="assets/classyheels-poster.jpg">
-      <source src="assets/classyheels.mp4" type="video/mp4">
-     </video>
-     <div class="media-label">ClassyHeels / Visual preview</div><button class="play-fallback">Play preview</button>
-    </div>
-   </div>
-   <div class="details">
-    <div class="detail"><h3>Positioning</h3><p>Premium footwear · fashion boutique · styling platform · accessories · creator commerce · luxury lifestyle.</p></div>
-    <div class="detail"><h3>Name qualities</h3><ul><li>Immediate category clarity</li><li>Elegant, easy-to-remember phrase</li><li>Strong .com brand fit</li></ul></div>
-    <div class="detail"><h3>Potential buyers</h3><p>Footwear labels, fashion retailers, lifestyle startups, designers and creator-led commerce brands.</p></div>
-   </div>
-  </article>
-
-  <!-- MUGHLAI FOOD -->
-  <article class="domain">
-   <div class="domain-top">
-    <div class="domain-info">
-     <div class="index">03 / Selected domain</div>
-     <div class="domain-name">MughlaiFood<span>.com</span></div>
-     <div class="category">Food · Restaurant · Culinary</div>
-     <p class="description">A descriptive category .com with a strong culinary identity. It can support a restaurant brand, food discovery platform, delivery concept, packaged-food business, recipe media property or premium Indian cuisine marketplace.</p>
-     <div class="tags"><span class="tag">Food</span><span class="tag">Restaurant</span><span class="tag">Indian Cuisine</span><span class="tag">Media</span></div>
-     <div class="actions">
-      <div class="market-wrap"><button class="market-btn gold" data-menu="mugh-buy">Buy It Now ↗</button>
-       <div class="menu" id="mugh-buy"><button class="disabled">Sedo <small>listing link not supplied</small></button><button class="disabled">Dynadot <small>listing link not supplied</small></button><button class="disabled">Atom <small>listing link not supplied</small></button><button class="disabled">GoDaddy <small>listing link not supplied</small></button><button class="disabled">Afternic <small>listing link not supplied</small></button></div>
-      </div>
-      <div class="market-wrap"><button class="market-btn" data-menu="mugh-offer">Make an Offer ↗</button>
-       <div class="menu" id="mugh-offer"><button class="disabled">Sedo <small>listing link not supplied</small></button><button class="disabled">Dynadot <small>listing link not supplied</small></button><button class="disabled">Atom <small>listing link not supplied</small></button><button class="disabled">GoDaddy <small>listing link not supplied</small></button><button class="disabled">Afternic <small>listing link not supplied</small></button></div>
-      </div>
-     </div>
-    </div>
-    <div class="media" data-video>
-     <img class="poster" src="assets/mughlaifood-poster.jpg" alt="MughlaiFood culinary video preview">
-     <video muted autoplay loop playsinline webkit-playsinline preload="auto" poster="assets/mughlaifood-poster.jpg">
-      <source src="assets/mughlaifood.mp4" type="video/mp4">
-     </video>
-     <div class="media-label">MughlaiFood / Visual preview</div><button class="play-fallback">Play preview</button>
-    </div>
-   </div>
-   <div class="details">
-    <div class="detail"><h3>Positioning</h3><p>Restaurant brand · food delivery · culinary media · recipes · packaged foods · Indian cuisine marketplace.</p></div>
-    <div class="detail"><h3>Name qualities</h3><ul><li>Highly descriptive category phrase</li><li>Easy commercial positioning</li><li>Broad food-business flexibility</li></ul></div>
-    <div class="detail"><h3>Potential buyers</h3><p>Restaurant groups, food-tech companies, culinary publishers, packaged-food brands and hospitality operators.</p></div>
-   </div>
-  </article>
- </div>
-</section>
-
-<section class="process" id="process">
- <div class="container">
-  <div class="section-kicker">Acquisition</div>
-  <h2>Choose a marketplace and acquire the name.</h2>
-  <p class="process-note">Use the Buy It Now or Make an Offer control on the domain you want. Each available marketplace option opens in a separate tab.</p>
-  <div class="process-grid">
-   <div class="process-card"><div class="process-num">01</div><h3>Select a domain</h3><p>Review the positioning, visual preview and commercial use cases for each .com.</p></div>
-   <div class="process-card"><div class="process-num">02</div><h3>Choose an action</h3><p>Open Buy It Now for an immediate purchase route or Make an Offer where supported.</p></div>
-   <div class="process-card"><div class="process-num">03</div><h3>Complete securely</h3><p>Continue on the selected marketplace and follow its purchase or offer process.</p></div>
-  </div>
- </div>
-</section>
-</main>
-
-<footer>
- <div class="container footer-row">
-  <div>Premium .com domain portfolio</div>
-  <div>© 2026</div>
- </div>
-</footer>
-
+<article class="domain"><div class="domain-top"><div class="info"><div class="index">03 / Selected domain</div><div class="name">MughlaiFood<span>.com</span></div><div class="category">Food · Cuisine · Hospitality</div><p class="desc">A highly descriptive .com built around a recognizable cuisine category. The name can support restaurants, food delivery, packaged foods, recipes, media, culinary commerce or a dedicated cuisine platform.</p><div class="tags"><span class="tag">Food</span><span class="tag">Cuisine</span><span class="tag">Restaurant</span><span class="tag">Delivery</span></div><div class="actions"><div class="market-wrap"><button class="market gold" data-menu="mughlai-buy">Buy It Now ↗</button><div class="menu" id="mughlai-buy"><a href="https://www.sedo.com/search/?keyword=mughlaifood.com" target="_blank" rel="noopener">Sedo <span class="verified">Open listing ↗</span></a>
+<a href="https://www.dynadot.com/domain/search.html?domain=mughlaifood.com" target="_blank" rel="noopener">Dynadot <span class="verified">Open listing ↗</span></a>
+<a href="https://www.atom.com/name/MughlaiFood" target="_blank" rel="noopener">Atom <span class="verified">Open listing ↗</span></a>
+<a href="https://forsale.godaddy.com/forsale/mughlaifood.com" target="_blank" rel="noopener">GoDaddy <span class="verified">Open listing ↗</span></a>
+<a href="https://www.afternic.com/forsale/mughlaifood.com" target="_blank" rel="noopener">Afternic <span class="verified">Open listing ↗</span></a></div></div><div class="market-wrap"><button class="market" data-menu="mughlai-offer">Make an Offer ↗</button><div class="menu" id="mughlai-offer"><a href="https://www.sedo.com/search/?keyword=mughlaifood.com" target="_blank" rel="noopener">Sedo <span class="verified">Open listing ↗</span></a>
+<a href="https://www.dynadot.com/domain/search.html?domain=mughlaifood.com" target="_blank" rel="noopener">Dynadot <span class="verified">Open listing ↗</span></a>
+<a href="https://www.atom.com/name/MughlaiFood" target="_blank" rel="noopener">Atom <span class="verified">Open listing ↗</span></a>
+<a href="https://forsale.godaddy.com/forsale/mughlaifood.com" target="_blank" rel="noopener">GoDaddy <span class="verified">Open listing ↗</span></a>
+<a href="https://www.afternic.com/forsale/mughlaifood.com" target="_blank" rel="noopener">Afternic <span class="verified">Open listing ↗</span></a></div></div></div></div><div class="media" data-video><img src="assets/mughlaifood-poster.jpg" alt="MughlaiFood visual preview"><video muted autoplay loop playsinline webkit-playsinline preload="auto"><source src="assets/mughlaifood.mp4" type="video/mp4"></video><div class="media-label">MughlaiFood / Visual preview</div><button class="play">Play preview</button></div></div><div class="details"><div class="detail"><h3>Positioning</h3><p>Restaurant brand · food delivery · packaged foods · recipe media · culinary marketplace · hospitality.</p></div><div class="detail"><h3>Name qualities</h3><ul><li>Descriptive category name</li><li>Strong cuisine recognition</li><li>Flexible food applications</li></ul></div><div class="detail"><h3>Potential buyers</h3><p>Restaurant groups, food brands, delivery platforms, culinary publishers and hospitality businesses.</p></div></div></article>
+</div></section>
+<section class="process" id="process"><div class="wrap"><div class="kicker">Acquisition</div><h2>Simple route from shortlist to ownership.</h2><p class="process-note">Choose the domain, open the available marketplace route, and complete the transaction through the marketplace's own checkout or offer flow.</p><div class="process-grid"><div class="process-card"><div class="process-num">01 / CHOOSE</div><h3>Select a name</h3><p>Review the domain's positioning and visual preview before choosing the name for your brand.</p></div><div class="process-card"><div class="process-num">02 / CONNECT</div><h3>Open the route</h3><p>Use Buy It Now or Make an Offer to open the relevant acquisition route when a verified listing is available.</p></div><div class="process-card"><div class="process-num">03 / ACQUIRE</div><h3>Complete securely</h3><p>Follow the marketplace's transaction process to complete payment and transfer of the domain.</p></div></div></div></section>
+</main><footer><div class="wrap footer-row"><span>Premium .com domain portfolio</span><span>© 2026</span></div></footer>
 <script>
-(function(){
-  // Fast, subtle interactions only. No slow scroll-reveal animations.
-  document.querySelectorAll('[data-menu]').forEach(btn=>{
-    btn.addEventListener('click', e=>{
-      e.stopPropagation();
-      const menu=document.getElementById(btn.dataset.menu);
-      document.querySelectorAll('.menu.open').forEach(m=>{if(m!==menu)m.classList.remove('open')});
-      menu.classList.toggle('open');
-    });
-  });
-  document.addEventListener('click',()=>document.querySelectorAll('.menu.open').forEach(m=>m.classList.remove('open')));
-
-  function setupMedia(box){
-    const v=box.querySelector('video');
-    const play=box.querySelector('.play-fallback');
-    const start=()=>{
-      v.muted=true; v.defaultMuted=true; v.setAttribute('muted','');
-      v.playsInline=true; v.setAttribute('playsinline',''); v.setAttribute('webkit-playsinline','');
-      const p=v.play();
-      if(p && p.catch) p.catch(()=>{});
-    };
-    v.addEventListener('playing',()=>box.classList.add('playing'));
-    v.addEventListener('pause',()=>{ if(!v.ended) box.classList.remove('playing') });
-    v.addEventListener('error',()=>box.classList.remove('playing'));
-    ['loadedmetadata','loadeddata','canplay','canplaythrough'].forEach(ev=>v.addEventListener(ev,start));
-    play.addEventListener('click',()=>{start();});
-    start();
-    if('IntersectionObserver' in window){
-      const io=new IntersectionObserver(entries=>{
-        entries.forEach(entry=>{ if(entry.isIntersecting) start(); });
-      },{threshold:.2});
-      io.observe(box);
-    }
-  }
-  document.querySelectorAll('[data-video]').forEach(setupMedia);
-})();
+const closeMenus=()=>document.querySelectorAll('.menu.open').forEach(m=>m.classList.remove('open'));
+document.querySelectorAll('[data-menu]').forEach(btn=>btn.addEventListener('click',e=>{e.stopPropagation();const menu=document.getElementById(btn.dataset.menu);document.querySelectorAll('.menu.open').forEach(m=>{if(m!==menu)m.classList.remove('open')});menu.classList.toggle('open')}));
+document.addEventListener('click',closeMenus);
+document.querySelectorAll('.menu').forEach(m=>m.addEventListener('click',e=>e.stopPropagation()));
+function initVideo(box){const v=box.querySelector('video'),play=box.querySelector('.play');const attempt=()=>{v.muted=true;v.defaultMuted=true;const p=v.play();if(p&&p.catch)p.catch(()=>{})};v.addEventListener('playing',()=>box.classList.add('playing'));v.addEventListener('loadeddata',attempt);v.addEventListener('canplay',attempt);play.addEventListener('click',()=>{attempt();setTimeout(()=>{if(!v.paused)box.classList.add('playing')},120)});attempt()}
+document.querySelectorAll('[data-video]').forEach(initVideo);
 </script>
-</body>
-</html>
+</body></html>
