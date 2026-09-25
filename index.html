@@ -43,15 +43,36 @@ header{height:82px;position:sticky;top:0;z-index:50;border-bottom:1px solid var(
 @media(max-width:600px){.shine-title{font-size:clamp(34px,9.5vw,52px);letter-spacing:-.035em}}
 </style>
 <style>.selected-domains-center{display:block!important;text-align:center!important;}</style>
-<style id="selected-domains-center-fix">
-.selected-domains-center-fix,
-.selected-domains-center-fix * {
-  text-align: center !important;
+
+
+
+
+
+
+<style id="correct-selected-domains">
+/* Requested mobile layout */
+#portfolio .section-head{
+  display:block !important;
+  text-align:center !important;
 }
-.selected-domains-center-fix {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+#portfolio .section-head > div{
+  width:100% !important;
+  text-align:center !important;
+}
+#portfolio .section-head .kicker{
+  display:block !important;
+  width:100% !important;
+  text-align:center !important;
+}
+#portfolio .section-head h2{
+  width:100% !important;
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+@media (max-width:560px){
+  .hero{padding-bottom:10px !important;}
+  #portfolio{padding-top:8px !important;}
 }
 </style>
 </head>
@@ -59,7 +80,7 @@ header{height:82px;position:sticky;top:0;z-index:50;border-bottom:1px solid var(
 <header><div class="wrap head"><a class="brand" href="#">Be <span>Grow</span></a><nav><a href="#portfolio">Portfolio</a></nav></div></header>
 <main>
 <section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><i></i> Premium Domain Portfolio</div><h1 class="shine-title">Build Your Brand</h1><p class="hero-copy" style="color:#fff;text-align:center;">A focused collection of premium .com domains selected for strong positioning, memorable naming and flexible commercial use.</p><div class="hero-actions"><a class="btn btn-primary" href="#portfolio">View domains ↓</a></div></div></div></div></section>
-<section class="section" id="portfolio"><div class="wrap"><div class="section-head"><div><div class="kicker selected-domains-center-fix">Selected domains</div><h2>Three names.<br>Clear directions.</h2></div><p class="section-note">Explore the names, positioning and visual previews. Choose a marketplace below. Buy Now and negotiation are handled on the marketplace listing where supported.</p></div>
+<section class="section" id="portfolio"><div class="wrap"><div class="section-head"><div><div class="kicker selected-domains-center-fix">Selected domains</div><h2 style="text-align:center!important;"><span class="selected-title-center">Three names.<br>Clear directions.</span></h2></div><p class="section-note">Explore the names, positioning and visual previews. Choose a marketplace below. Buy Now and negotiation are handled on the marketplace listing where supported.</p></div>
 
 <article class="domain"><div class="domain-top"><div class="info"><div class="index">01 / Selected domain</div><div class="name">OdinShip<span>.com</span></div><div class="category">Logistics · Shipping · Maritime</div><p class="desc">A direct two-word .com pairing a distinctive first word with “Ship”. It can suit logistics, shipping, maritime services, cargo, freight, trading and shipping businesses.</p><div class="tags"><span class="tag">Brandable</span><span class="tag">Logistics</span><span class="tag">Shipping</span><span class="tag">Maritime</span>
 <span class="tag">Cargo</span>
