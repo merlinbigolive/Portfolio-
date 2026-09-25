@@ -93,76 +93,108 @@ header{height:82px;position:sticky;top:0;z-index:50;border-bottom:1px solid var(
 }
 </style>
 
-<style id="kinetic-build-your-brand-exact">
-.kinetic-title{
+<style id="reference-build-brand-animation">
+/* Reference-inspired title animation:
+   outline appears first, solid white fill wipes left-to-right,
+   then a clean mirrored reflection settles underneath.
+   No blur and no glow filter. */
+.ref-kinetic-title{
   position:relative !important;
   display:block !important;
-  text-align:center !important;
+  width:100% !important;
+  min-height:1.35em !important;
   overflow:visible !important;
-  min-height:1.15em;
+  text-align:center !important;
+  color:#fff !important;
+  filter:none !important;
+  -webkit-text-fill-color:transparent !important;
+  margin-bottom:.28em !important;
 }
-.kinetic-main,
-.kinetic-slice{
+.ref-outline,
+.ref-fill,
+.ref-reflection{
   display:block;
+  width:100%;
   white-space:nowrap;
   font:inherit;
   font-weight:inherit;
   letter-spacing:inherit;
+  text-align:center;
 }
-.kinetic-main{
+.ref-outline{
   position:relative;
-  opacity:1;
-  animation:kineticClean 3.8s steps(1,end) infinite;
-}
-.kinetic-slice{
-  position:absolute;
-  inset:0;
-  pointer-events:none;
+  color:transparent !important;
+  -webkit-text-fill-color:transparent !important;
+  -webkit-text-stroke:1.35px rgba(255,255,255,.9);
   opacity:0;
+  transform:translateY(8px);
+  animation:refOutline 4.2s cubic-bezier(.2,.7,.2,1) infinite;
 }
-.kinetic-top{
-  clip-path:inset(0 0 52% 0);
-  animation:kineticTop 3.8s cubic-bezier(.7,0,.2,1) infinite;
+.ref-fill{
+  position:absolute;
+  left:0;
+  top:0;
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  -webkit-text-stroke:0;
+  clip-path:inset(0 100% 0 0);
+  transform:translateY(8px);
+  animation:refFill 4.2s cubic-bezier(.2,.8,.2,1) infinite;
 }
-.kinetic-bottom{
-  clip-path:inset(48% 0 0 0);
-  animation:kineticBottom 3.8s cubic-bezier(.7,0,.2,1) infinite;
+.ref-reflection{
+  position:absolute;
+  left:0;
+  top:88%;
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  opacity:0;
+  transform:scaleY(-1) translateY(-1px);
+  transform-origin:50% 0;
+  clip-path:inset(0 100% 0 0);
+  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.42),rgba(0,0,0,0));
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.42),rgba(0,0,0,0));
+  animation:refReflection 4.2s cubic-bezier(.2,.8,.2,1) infinite;
+  pointer-events:none;
 }
-@keyframes kineticTop{
-  0%,7%{opacity:0;transform:translateX(-115px)}
-  8%{opacity:1;transform:translateX(-115px)}
-  17%{opacity:1;transform:translateX(7px)}
-  22%,72%{opacity:0;transform:translateX(0)}
-  100%{opacity:0;transform:translateX(0)}
+@keyframes refOutline{
+  0%,7%{opacity:0;transform:translateY(8px)}
+  13%{opacity:1;transform:translateY(0)}
+  30%,100%{opacity:1;transform:translateY(0)}
 }
-@keyframes kineticBottom{
-  0%,7%{opacity:0;transform:translateX(115px)}
-  8%{opacity:1;transform:translateX(115px)}
-  17%{opacity:1;transform:translateX(-7px)}
-  22%,72%{opacity:0;transform:translateX(0)}
-  100%{opacity:0;transform:translateX(0)}
+@keyframes refFill{
+  0%,10%{clip-path:inset(0 100% 0 0);transform:translateY(8px)}
+  18%{clip-path:inset(0 88% 0 0);transform:translateY(0)}
+  38%{clip-path:inset(0 35% 0 0)}
+  54%{clip-path:inset(0 0 0 0)}
+  72%{clip-path:inset(0 0 0 0)}
+  100%{clip-path:inset(0 100% 0 0)}
 }
-@keyframes kineticClean{
-  0%,18%{opacity:0;transform:scaleX(1.02)}
-  19%,72%{opacity:1;transform:scaleX(1)}
-  73%,100%{opacity:1;transform:scaleX(1)}
+@keyframes refReflection{
+  0%,43%{opacity:0;clip-path:inset(0 100% 0 0)}
+  54%{opacity:.42;clip-path:inset(0 0 0 0)}
+  72%{opacity:.34;clip-path:inset(0 0 0 0)}
+  100%{opacity:0;clip-path:inset(0 100% 0 0)}
 }
 @media(max-width:560px){
-  .kinetic-title{font-size:clamp(36px,10.5vw,58px)!important}
+  .ref-kinetic-title{
+    font-size:clamp(36px,10.5vw,58px)!important;
+    min-height:1.4em!important;
+  }
 }
 @media(prefers-reduced-motion:reduce){
-  .kinetic-main{animation:none!important;opacity:1!important}
-  .kinetic-slice{display:none!important}
+  .ref-outline{opacity:1!important;transform:none!important;animation:none!important}
+  .ref-fill{clip-path:inset(0)!important;transform:none!important;animation:none!important}
+  .ref-reflection{display:none!important}
 }
 </style>
 </head>
 <body>
 <header><div class="wrap head"><a class="brand" href="#">Be <span>Grow</span></a><nav><a href="#portfolio">Portfolio</a></nav></div></header>
 <main>
-<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><i></i> Premium Domain Portfolio</div><h1 class="shine-title kinetic-title" aria-label="Build Your Brand">
-  <span class="kinetic-main">Build Your Brand</span>
-  <span class="kinetic-slice kinetic-top" aria-hidden="true">Build Your Brand</span>
-  <span class="kinetic-slice kinetic-bottom" aria-hidden="true">Build Your Brand</span>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><i></i> Premium Domain Portfolio</div><h1 class="shine-title ref-kinetic-title" aria-label="Build Your Brand">
+  <span class="ref-outline">Build Your Brand</span>
+  <span class="ref-fill" aria-hidden="true">Build Your Brand</span>
+  <span class="ref-reflection" aria-hidden="true">Build Your Brand</span>
 </h1><p class="hero-copy" style="color:#fff;text-align:center;">A focused collection of premium .com domains selected for strong positioning, memorable naming and flexible commercial use.</p><div class="hero-actions"><a class="btn btn-primary" href="#portfolio">View domains ↓</a></div></div></div></div></section>
 <section class="section" id="portfolio"><div class="wrap"><div class="section-head"><div><div class="kicker selected-domains-center-fix">Selected domains</div><h2 style="text-align:center!important;"><span class="selected-title-center">ACQUIRE NAME</span></h2></div><p class="section-note">Explore the names, positioning and visual previews. Choose a marketplace below. Buy Now and negotiation are handled on the marketplace listing where supported.</p></div>
 
