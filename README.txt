@@ -1,2 +1,1 @@
-Be Grow — Premium Domain Portfolio
-Updated hero title: Build Your Brand, centered on one line with a continuous shine animation.
+Portfolio website updated with MughlaiFood-style premium design, 4 action buttons per domain, hero background video, and Supabase visitor analytics. Run supabase-portfolio-update.sql once in Supabase SQL Editor before deploying. Admin: /admin.html
